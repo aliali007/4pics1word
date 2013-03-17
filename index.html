@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author"   content="Lem Lordje Ko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>4 Pics, 1 Word</title>
+
+    <link href="css/vendor/bootstrap-cerulean.min.css"    rel="stylesheet" media="screen" />
+    <link href="css/app.css" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="http://lemonkoala.com/">Author</a></li>
+          <li><a href="https://github.com/">Contribute</a></li>
+        </ul>
+        <h3 class="muted">Possible Words Generator</h3>
+      </div>
+      <hr />
+
+      <div class="jumbotron">
+        <h1>Stuck?</h1>
+        <p class="lead">This generates words that can be formed from
+        the given letters.</p>
+        <p class="lead">Note, however, that the answer you are looking
+        for may not be in the word list I am using.</p>
+      </div>
+      <hr />
+
+      <form id="theform">
+        <div class="row-fluid">
+          <div class="span2">
+            <input name="letters" type="text" maxlength="1" />
+            <input name="letters" type="text" maxlength="1" />
+          </div>
+          <div class="span2">
+            <input name="letters" type="text" maxlength="1" />
+            <input name="letters" type="text" maxlength="1" />
+          </div>
+          <div class="span2">
+            <input name="letters" type="text" maxlength="1" />
+            <input name="letters" type="text" maxlength="1" />
+          </div>
+          <div class="span2">
+            <input name="letters" type="text" maxlength="1" />
+            <input name="letters" type="text" maxlength="1" />
+          </div>
+          <div class="span2">
+            <input name="letters" type="text" maxlength="1" />
+            <input name="letters" type="text" maxlength="1" />
+          </div>
+          <div class="span2">
+            <input name="letters" type="text" maxlength="1" />
+            <input name="letters" type="text" maxlength="1" />
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span6 offset2">
+            Number of letters: <input type="text" name="num" maxlength="1" />
+          </div>
+          <div class="span4">
+            <input type="submit" value="Generate Words"
+                   class="btn btn-success" />
+          </div>
+        </div>
+      </form>
+      <hr />
+
+      <div class="row-fluid">
+        <div class="span2 offset5">
+          <h3>Answers</h3>
+          <ul id="answers">
+            <li>module</li>
+            <li>nodule</li>
+            <li>noodle</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'lemonkoala-4pics1word'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      <hr />
+
+      <div class="footer">
+        <p>&copy; 2013 Lem Lordje Ko
+      </div>
+    </div>
+    <script src="js/corncob.js"></script>
+    <script src="js/algos.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
