@@ -4,7 +4,7 @@ window.onload = function() {
 
     var form = e.target;
     var letters = Array.prototype.map.call(form.letters,
-      function(txtBox) { return txtBox.value; }
+      function(txtBox) { return txtBox.value.toLowerCase(); }
     ).join('');
     var wordLen = form.num.value;
 
